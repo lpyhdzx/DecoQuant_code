@@ -1,0 +1,13 @@
+/.cache
+__pycache__/
+redpajama
+redpajama-weighted
+slurm
+preprocessed_*
+new_preprocessed_*
+.bash_aliases
+checkpoints
+logs
+scripts
+demos_cache
+external_modules/bdcsvd/eigen/*

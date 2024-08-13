@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+            "args":[
+                "--model_path", "/mnt/liupeiyu/nlp_model/opt-1.3b", //"facebook/opt-6.7b",
+                "--dataset", "subj",
+                "--num_plaintext_demonstrations", "2",
+                "--use_calibration",
+                // "--share_module","q_proj"
+                "--exp","ours",
+                "--num_bits","2"
+            ]
+        }
+    ]
+}
